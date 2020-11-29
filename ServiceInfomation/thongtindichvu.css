@@ -23,3 +23,13 @@ section{
 .carousel-caption{
     text-shadow: 2px 2px 5px #000000;
 }
+#headline-container{
+    padding: 10px;
+    background-color: gainsboro;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+#slide-img{
+    height: 600px;
+    width: max-content;
+}
