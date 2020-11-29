@@ -14,3 +14,9 @@
 footer{
     margin-top: 50px;
 }
+.card{
+    height: 100%;
+}
+#copyright{
+    background-color: #222222;
+}

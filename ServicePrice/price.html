@@ -56,60 +56,47 @@
       </div>
     </nav>
   </header>
-  <h2 style="text-align:center">Header</h2>
-  <p style="text-align:center">Menu bar</p>
+
+  <div class="container-fluid" style="margin-top:80px">
+    <section>
+        
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="vhl2.jpeg" id="slide-img" style="opacity: 0.9; height: 400px; width: 100%;" alt="Vịnh Hạ Long"
+                        class="img-fluid">
+                    <div class="carousel-caption text-light">
+                        <h1 class="text-uppercase">VỊNH HẠ LONG</h1>
+                        <p class="text-center">Nổi tiếng với hệ thống đảo và hang động có tạo hình vô cùng kì lạ, 
+                          đảo thì giống hình một người đang nhìn về phía đất liền, đảo lại giống một ông lão đang 
+                          buông cần câu cá, tinh xảo hơn nữa là hòn đảo giống hình con rồng đang bay lượn... 
+                          Đến với Vịnh Hạ Long bạn như lạc vào thế giới cổ tích!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="vhl4.jpg" id="slide-img" style="opacity: 0.9; height: 400px; width: 100%;" alt=" Sapa" class="img-fluid"">
+                    <div class=" carousel-caption">
+                    <h1 class="text-uppercase">VỊNH HẠ LONG</h1>
+                    <p class="text-center">Tham quan thiên nhiên hoang sơ với các đảo đá vôi thiên nhiên, tham dự các lễ hội do người dân địa 
+                      phương tổ chức, dự tiệc tối trên du thuyền ở trên biển, thư giãn cùng gia đình người thân tại khách sạn 5 sao lớn nhất Đông Nam Á.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+</div>
 
 
-  <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="baner.jpg" style="width: 700px; height: 312px;">
-      <div class="text">VỊNH HẠ LONG TOUR</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="banner2.jpg" style="width: 700px; height: 312px;">
-      <div class="text">THAM QUAN CÁC HÒN</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="banner3.jpg" style="width: 700px; height: 312px;">
-      <div class="text">ĐÊM TIỆC DU THUYỀN</div>
-    </div>
-
-  </div>
-  <br>
-
-  <div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-
-  <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-  </script>
+ 
   <h2 id="title">Quý khách chọn giá phù hợp</h2>
   <div class="hover-table-layout">
     <div class="listing-item">
@@ -118,7 +105,7 @@
         <figcaption>
           <div class="caption">
             <h1>VND 3.000.000</h1>
-            <p>basic</p>
+            <p>Basic</p>
           </div>
         </figcaption>
       </figure>
@@ -128,8 +115,7 @@
         <h4>Bữa sáng, trưa</h4>
         <h4>2 ngày, 1 đêm</h4>
         <h4>Vé xem kịch</h4>
-        <button>CHỌN NGAY</button>
-      </div>
+        <button type="button" class="btn btn-outline-danger" style="margin-left:50px;">Chọn ngay</button>      </div>
     </div>
     <div class="listing-item">
       <figure class="image">
@@ -147,8 +133,7 @@
         <h4>Bữa sáng, trưa</h4>
         <h4>Vé tham quan khu vui chơi</h4>
         <h4>2 ngày, 1 đêm</h4>
-        <button>CHỌN NGAY</button>
-      </div>
+        <button type="button" class="btn btn-outline-danger" style="margin-left:50px;">Chọn ngay</button>      </div>
     </div>
     <div class="listing-item">
       <figure class="image">
@@ -166,8 +151,7 @@
         <h4>Bữa sáng, trưa</h4>
         <h4>Tiệc trên du thuyền (17h-23h)</h4>
         <h4>2 ngày, 1 đêm</h4>
-        <button>CHỌN NGAY</button>
-      </div>
+        <button type="button" class="btn btn-outline-danger" style="margin-left:50px;">Chọn ngay</button>      </div>
     </div>
   </div>
   <footer class="page-footer bg-dark">
